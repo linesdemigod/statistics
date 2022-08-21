@@ -1,0 +1,16 @@
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\bin\Debug\statistic and probability.exe.config
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\bin\Debug\statistic and probability.exe
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\bin\Debug\statistic and probability.pdb
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\obj\Debug\statistic and probability.csprojAssemblyReference.cache
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\obj\Debug\statistic_and_probability.Form1.resources
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\obj\Debug\statistic_and_probability.Properties.Resources.resources
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\obj\Debug\statistic and probability.csproj.GenerateResource.cache
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\obj\Debug\statistic and probability.csproj.CoreCompileInputs.cache
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\obj\Debug\statistic and probability.exe
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\obj\Debug\statistic and probability.pdb
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\bin\Debug\MathNet.Numerics.dll
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\bin\Debug\System.ValueTuple.dll
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\bin\Debug\MathNet.Numerics.xml
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\bin\Debug\System.ValueTuple.xml
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\obj\Debug\statistic and probability.csproj.CopyComplete
+C:\Users\Banks\source\repos\statistic and probability\statistic and probability\obj\Debug\statistic_and_probability.Progressbar.resources
