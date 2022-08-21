@@ -37,6 +37,8 @@
             this.btncalculate = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdPopulation = new System.Windows.Forms.RadioButton();
+            this.rdSample = new System.Windows.Forms.RadioButton();
             this.txtPercentile = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblQ3 = new System.Windows.Forms.Label();
@@ -46,8 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmbCalcType = new System.Windows.Forms.ComboBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.rdSample = new System.Windows.Forms.RadioButton();
-            this.rdPopulation = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -148,6 +148,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Statistics";
             // 
+            // rdPopulation
+            // 
+            this.rdPopulation.AutoSize = true;
+            this.rdPopulation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdPopulation.Location = new System.Drawing.Point(258, 142);
+            this.rdPopulation.Name = "rdPopulation";
+            this.rdPopulation.Size = new System.Drawing.Size(96, 22);
+            this.rdPopulation.TabIndex = 19;
+            this.rdPopulation.Text = "Population";
+            this.rdPopulation.UseVisualStyleBackColor = true;
+            // 
+            // rdSample
+            // 
+            this.rdSample.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rdSample.AutoSize = true;
+            this.rdSample.Checked = true;
+            this.rdSample.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdSample.Location = new System.Drawing.Point(135, 142);
+            this.rdSample.Name = "rdSample";
+            this.rdSample.Size = new System.Drawing.Size(76, 22);
+            this.rdSample.TabIndex = 18;
+            this.rdSample.TabStop = true;
+            this.rdSample.Text = "Sample";
+            this.rdSample.UseVisualStyleBackColor = true;
+            // 
             // txtPercentile
             // 
             this.txtPercentile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -247,36 +272,12 @@
             this.cmbCalcType.Name = "cmbCalcType";
             this.cmbCalcType.Size = new System.Drawing.Size(150, 28);
             this.cmbCalcType.TabIndex = 12;
+            this.cmbCalcType.SelectedIndexChanged += new System.EventHandler(this.cmbCalcType_SelectedIndexChanged);
             // 
             // toolTip1
             // 
             this.toolTip1.Tag = "";
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            // 
-            // rdSample
-            // 
-            this.rdSample.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rdSample.AutoSize = true;
-            this.rdSample.Checked = true;
-            this.rdSample.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdSample.Location = new System.Drawing.Point(135, 142);
-            this.rdSample.Name = "rdSample";
-            this.rdSample.Size = new System.Drawing.Size(76, 22);
-            this.rdSample.TabIndex = 18;
-            this.rdSample.TabStop = true;
-            this.rdSample.Text = "Sample";
-            this.rdSample.UseVisualStyleBackColor = true;
-            // 
-            // rdPopulation
-            // 
-            this.rdPopulation.AutoSize = true;
-            this.rdPopulation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdPopulation.Location = new System.Drawing.Point(258, 142);
-            this.rdPopulation.Name = "rdPopulation";
-            this.rdPopulation.Size = new System.Drawing.Size(96, 22);
-            this.rdPopulation.TabIndex = 19;
-            this.rdPopulation.Text = "Population";
-            this.rdPopulation.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

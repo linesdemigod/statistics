@@ -22,7 +22,7 @@ namespace statistic_and_probability
         private void btncalculate_Click(object sender, EventArgs e)
         {
 
-            //var reg = new Regex(@"^\+?(\d[\d-. ]+)?(\([\d-. ]+\))?[\d-. ]+\d$");
+           
 
             //validate the text box
             if (txtmean.Text == "")
@@ -32,9 +32,10 @@ namespace statistic_and_probability
                 return;
             }
 
+            //accept only numbers
             if (!Regex.Match(txtmean.Text, @"^\+?(\d[\d-. ]+)?(\([\d-. ]+\))?[\d-. ]+\d$").Success)
             {
-                MessageBox.Show("Data set should be a number");
+                MessageBox.Show("Data set should be a number or delete the whitespace");
 
                 return;
             }
@@ -333,7 +334,22 @@ namespace statistic_and_probability
             }
         }
 
+        //close forms
         private void Form1_FormClosed(object sender, FormClosedEventArgs e) => Application.Exit();
 
+
+        //hide or unhide radio button
+        private void cmbCalcType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbCalcType.Text == "Median" || cmbCalcType.Text == "Mean" || cmbCalcType.Text == "Mode" || cmbCalcType.Text == "Percentile")
+            {
+                rdPopulation.Visible = false;
+                rdSample.Visible = false;
+            } else
+            {
+                rdPopulation.Visible = true;
+                rdSample.Visible = true;
+            }
+        }
     }
 }
