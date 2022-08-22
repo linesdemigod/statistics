@@ -19,6 +19,16 @@ namespace statistic_and_probability
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //hide various textboxes and label
+            label3.Visible = false;
+            txtPercentile.Visible = false;
+
+            rdPopulation.Visible = false;
+            rdSample.Visible = false;
+        }
+
         private void btncalculate_Click(object sender, EventArgs e)
         {
 
@@ -341,15 +351,29 @@ namespace statistic_and_probability
         //hide or unhide radio button
         private void cmbCalcType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbCalcType.Text == "Median" || cmbCalcType.Text == "Mean" || cmbCalcType.Text == "Mode" || cmbCalcType.Text == "Percentile")
+            if (cmbCalcType.Text == "Median" || cmbCalcType.Text == "Mean" || cmbCalcType.Text == "Mode")
             {
                 rdPopulation.Visible = false;
                 rdSample.Visible = false;
-            } else
+                label3.Visible = false;
+                txtPercentile.Visible = false;
+            }
+            else if (cmbCalcType.Text == "Percentile")
+            {
+                label3.Visible = true;
+                txtPercentile.Visible = true;
+                rdPopulation.Visible = false;
+                rdSample.Visible = false;
+            }
+            else
             {
                 rdPopulation.Visible = true;
                 rdSample.Visible = true;
+                label3.Visible = false;
+                txtPercentile.Visible = false;
             }
         }
+
+        
     }
 }
